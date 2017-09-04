@@ -17,7 +17,7 @@ void Brick::Draw(Graphics & gfx)
 
 bool Brick::DoBallCollision(Ball& ball)
 {
-	if (rect.IsOverlappingWith(ball.GetRect()))
+	if (!destroyed && rect.IsOverlappingWith(ball.GetRect()))
 	{
 		destroyed = true;
 		ball.ReboundY();
