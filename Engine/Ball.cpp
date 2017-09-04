@@ -71,3 +71,8 @@ void Ball::ReboundY()
 {
 	velocity.y = -velocity.y;
 }
+
+Vec2 Ball::GetVelocity() const
+{
+	return velocity;
+}
