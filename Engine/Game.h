@@ -46,15 +46,20 @@ private:
 private:
 	MainWindow& wnd;
 	Graphics gfx;
+	/********************************/
+	/*  User Variables              */
+	/********************************/
+	static constexpr float brickWidth = 40.0f;
+	static constexpr float brickHeight = 24.0f;
+	static constexpr int nBricksAcross = 15;
+	static constexpr int nBricksDown = 5;
+	static constexpr int nBricks = nBricksAcross * nBricksDown;
 	RectF walls;
 	Brick b;
 	Ball ball;
 	FrameTimer ft;
-	Brick brick;
+	Brick bricks[nBricks];
 	Paddle paddle;
 	Sound soundPad;
 	Sound soundBrick;
-	/********************************/
-	/*  User Variables              */
-	/********************************/
 };
