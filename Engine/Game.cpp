@@ -31,7 +31,7 @@ Game::Game( MainWindow& wnd )
 	soundBrick(L"sounds\\arkbrick.wav"),
 	paddle(Vec2(400.0f, 500.0f), 75, 15)
 {
-	Color brickColors[5] = { Colors::Red, Colors::Yellow, Colors::Blue, Colors::Green, Colors::Cyan };
+	Color brickColors[5] = { Colors::Magenta, Colors::Yellow, Colors::Blue, Colors::Green, Colors::Cyan };
 	int i = 0;
 	Vec2 topLeft(50.0f, 20.0f);
 	for (int y = 0; y < nBricksDown; y++)
